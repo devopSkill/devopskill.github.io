@@ -23,7 +23,7 @@
     <meta property="og:url" content="http://devopskill.com.ve19-02-2015-Manual.adoc" />
     <meta property="og:image" content="http://devopskill.github.io/images/git.jpg" />
     <meta property="article:published_time" content="Invalid date" />
-    <meta property="article:modified_time" content="2015-02-20T23:21:50.968Z" />
+    <meta property="article:modified_time" content="2015-02-20T23:48:54.485Z" />
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Manual" />
@@ -46,7 +46,7 @@
     "headline": "Manual",
     "url": "http://devopskill.com.ve19-02-2015-Manual.adoc",
     "datePublished": "Invalid date",
-    "dateModified": "2015-02-20T23:21:50.968Z",
+    "dateModified": "2015-02-20T23:48:54.485Z",
     "image": "http://devopskill.github.io/images/git.jpg",
     "description": "ste es un post de GIT..."
 }
