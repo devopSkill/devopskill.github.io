@@ -1,4 +1,4 @@
-= Manual de Git En Español 
+= Manual
 
 
 :hp-image: http://devopskill.github.io/images/git.jpg
