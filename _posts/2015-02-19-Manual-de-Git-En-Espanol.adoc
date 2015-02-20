@@ -1,0 +1,8 @@
+= Manual de Git En Español 
+
+
+:hp-image: http://devopskill.github.io/images/git.jpg
+
+:published_at: 2015-02-19
+
+ste es un post de GIT
