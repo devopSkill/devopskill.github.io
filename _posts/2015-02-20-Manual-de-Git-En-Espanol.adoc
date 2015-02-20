@@ -5,4 +5,4 @@
 
 
 
-ste es un post de GIT
+Este es un post de GIT
