@@ -1,8 +1,0 @@
-= Manual
-
-
-:hp-image: http://devopskill.github.io/images/git.jpg
-
-:published_at: 19-02-2015
-
-ste es un post de GIT

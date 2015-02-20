@@ -1,6 +1,0 @@
-= Python Para principantes
-
-:hp-image: http://devopskill.github.io/images/python.jpg
-:hp-tags: Python
-
-
