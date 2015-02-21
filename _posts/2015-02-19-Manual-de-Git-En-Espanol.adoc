@@ -9,7 +9,7 @@
 
 === ¿ Qué es Git ? 
 
-Git es sistema de control de versiones desarrollado por linus Torvals para faciliar el trabajo en equipos de desarrollo de Software.
+Git es sistema de control de versiones desarrollado por linus Torvals escrito en C para faciliar el trabajo en equipos de desarrollo de Software.
 
 
 === ¿Quienes usan Git ?
@@ -20,38 +20,49 @@ ____
 Yo lo uso xD
 ____
 
+De hecho este sitio corre sobre GitHub  ( una plataforma que implementa git y hace el trabajo mas fácil) y  otras tecnologias.
+
 Tú, si quieres conocer la verdadera forma de desarrollar software en equipos de trabajos, sin morir en el intento, también deberias hacerlo.
 
 Millones de programadores y desarrolladores a lo largo y ancho del mundo.
 
-
+---
 
 Existen unos comandos básicos para su uso, y los voy a citar (algunos ) a continuación:
 
 === Comandos básicos
 
-[source, bash]
-----
+
+* `git init`: Inicializa el repositorio
+
+* `git add .`: Agrega al commit todos los archivos para ser subidos a el repositorio remoto ( se puede ser especifico en que archivos se quieren agregar y cuales no
+
+* `git commit - m 'algun mensaje'`: Prepara el repositorio para 
 
 
-Aqui dentro codigo <code >
-<? php 
-echo "mundo"
-?>
-----
-
-....
-sudo install mav
-
-....
+* `git status`: Nos muestra el estado de nuestro repositorio ( si existen archivos modificados desde el último commit 
 
 
+* `git clone [url]` : Clonas un repositorio en tu maquina local [url] es la ruta del repositorio en el servidor Remoto
 
-`mvn --version` weasdfasd sd `sdfasd`
-
-
-http://adf.ly/13786f[Descargar]
+* `git push`:  Envia los cambios al repositorio remoto
 
 
+Existen muchos otros comandos que van a ayudarte a desenvolverte con la herramienta.
 
-http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html[Enlance]
+La instalación del mismo va a depender de la plataforma en la que te encuentres trabajando!.
+
+:linkattrs:
+
+Como servidor remoto, recomendando y ampliamente utilizado http://github.com/[GitHub, window="_blank"] ( como ya lo citaba arriba ).
+
+He nombrado una serie de términos que debes ir familiarizandote y que están ampliamente explicados y detallados en el manual que a continuación les dejo para que sigan leyendo sobre el tema:
+
+
+
+:linkattrs:
+
+http://adf.ly/13786f[Descargar Manual de Git en Español, window="_blank"]
+
+
+Espero que les sirva de mucho el aporte y puedan divertirse y aprender. *Enjoy coding*
