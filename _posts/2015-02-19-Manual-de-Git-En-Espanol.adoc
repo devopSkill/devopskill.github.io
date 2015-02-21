@@ -62,7 +62,7 @@ He nombrado una serie de términos que debes ir familiarizandote y que están am
 
 :linkattrs:
 
-http://adf.ly/13786f[Descargar Manual de Git en Español, window="_blank"]
+== http://adf.ly/13786f[Descargar Manual de Git en Español, window="_blank"]
 
 
-Espero que les sirva de mucho el aporte y puedan divertirse y aprender. *Enjoy coding*
+Espero que les sirva de mucho el aporte y puedan divertirse y aprender. *Enjoy coding :D*
