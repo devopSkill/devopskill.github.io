@@ -30,14 +30,7 @@ Existen unos comandos básicos para su uso, y los voy a citar (algunos ) a conti
 
 === Comandos básicos
 
-----
-
-----
-
-
-
-
-
+[source, bash]
 ----
 
 
