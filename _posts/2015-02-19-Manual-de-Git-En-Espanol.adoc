@@ -1,0 +1,56 @@
+= Manual de Git En Español 
+
+
+:hp-image: http://devopskill.github.io/images/git.jpg
+
+:hp-tags: Git
+
+
+
+=== ¿ Qué es Git ? 
+
+Git es sistema de control de versiones desarrollado por linus Torvals para faciliar el trabajo en equipos de desarrollo de Software.
+
+
+=== ¿Quienes usan Git ?
+
+
+[quote, @tuaalex7]
+____
+Yo lo uso xD
+____
+
+Tú, si quieres conocer la verdadera forma de desarrollar software en equipos de trabajos, sin morir en el intento, también deberias hacerlo.
+
+Millones de programadores y desarrolladores a lo largo y ancho del mundo.
+
+
+
+Existen unos comandos básicos para su uso, y los voy a citar (algunos ) a continuación 
+
+=== Comandos básicos
+
+
+
+
+
+
+----
+
+
+Aqui dentro codigo <code >
+<? php 
+echo "mundo"
+?>
+----
+
+....
+sudo install mav
+
+....
+
+
+
+`mvn --version` weasdfasd sd `sdfasd`
+
+http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html[Enlance]
