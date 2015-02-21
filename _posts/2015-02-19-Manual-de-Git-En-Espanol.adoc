@@ -19,7 +19,8 @@ ____
 Yo lo uso xD
 ____
 
-De hecho este sitio corre sobre GitHub  ( una plataforma que implementa git y hace el trabajo mas fácil) y  otras tecnologias.
+:linkattrs:
+De hecho este sitio corre sobre  http://github.com/[GitHub, window="_blank"] ( una plataforma que implementa git y hace el trabajo mas fácil) y  otras tecnologias.
 
 Tú, si quieres conocer la verdadera forma de desarrollar software en equipos de trabajos, sin morir en el intento, también deberias hacerlo.
 
