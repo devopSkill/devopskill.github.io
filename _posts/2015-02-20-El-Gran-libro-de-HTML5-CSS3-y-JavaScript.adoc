@@ -68,17 +68,14 @@ Haré referencia a sus APIs ( recuerda que todo esta más explicado en el libro 
 * `*Canvas*`: Es una *API* de dibujo, para la creación y manipulación de gráficos.
 * `*Drag and Drop*`: Arrastrar y soltar es posible gracias a ella
 * `*Geolocation*`: Provee la ubicación fisica del dispositivo tomando datos de la información de la red,o el GPS.
-* `*Indexed Database*`: 
+* `*Indexed Database*`: agrega la capacidad de trabajar con bases de datos del lado del usuario
 
 
-
-
-
-
+Para la documentación completa y que puedas seguir formandote y creciendo aqui te dejo el *Libro*
 
 :linkattrs:
 
-== http://adf.ly/13786f[Descargar Libro, window="_blank"]
+== http://adf.ly/138b64[Descargar Libro, window="_blank"]
 
  
 
