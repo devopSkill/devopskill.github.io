@@ -23,7 +23,7 @@
     <meta property="og:url" content="http://devopskill.com.ve/2015/02/20/El-Gran-libro-de-HTML5-CSS3-y-JavaScript.html" />
     <meta property="og:image" content="http://devopskill.github.io/images/html5.jpg" />
     <meta property="article:published_time" content="2015-02-20T04:30:00.000Z" />
-    <meta property="article:modified_time" content="2015-02-22T01:33:53.305Z" />
+    <meta property="article:modified_time" content="2015-02-22T03:46:36.866Z" />
     <meta property="article:tag" content="HTML5" />
     <meta property="article:tag" content="CSS3" />
     <meta property="article:tag" content="JavaScript" />
@@ -49,7 +49,7 @@
     "headline": "El Gran libro de HTML5, CSS3 y JavaScript",
     "url": "http://devopskill.com.ve/2015/02/20/El-Gran-libro-de-HTML5-CSS3-y-JavaScript.html",
     "datePublished": "2015-02-20T04:30:00.000Z",
-    "dateModified": "2015-02-22T01:33:53.305Z",
+    "dateModified": "2015-02-22T03:46:36.866Z",
     "image": "http://devopskill.github.io/images/html5.jpg",
     "keywords": "HTML5,  CSS3,  JavaScript",
     "description": "Les traigo en ésta oportunidad un muy buen libro que nos va a encaminar al desarrollo web, que trata de los lenguajes necesarios para hacerlo. Hacer paginitas, crear blog, hacer de internet un mejor lugar&amp;#8230;&amp;#8203; xD, todo esto..."
@@ -123,7 +123,108 @@
 <p>Ps bien, como muchos ya conocemos, otros no tanto ( este libro es para todos :D ) es la quinta versión o revision de <strong>HTML</strong>, el lenguaje de marcado de etiquetas que se usa para maquetar y estructurar nuestras Webs!.</p>
 </div>
 <div class="paragraph">
-<p>Consideremos algunas etiquetas nuevas de <strong>HTML5</strong></p>
+<p>Consideremos algunas etiquetas nuevas de <strong>HTML5</strong> que vienen a darle mayor contenido semántico a todo el documento que hagamos; así todo se vuelve mas <em>bonito</em> y <em>comprensible</em> :D</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>&lt;header&gt;</strong></code>: Tiene el propósito de contener la cabecera de una sección pero también puede ser utilizado para agrupar índices, formularios de búsqueda, logos, etc&#8230;&#8203;</p>
+</li>
+<li>
+<p><code><strong>&lt;nav&gt;</strong></code>: Se usa para crear bloques de navegación, ejemplo &#8594; Menús,</p>
+</li>
+<li>
+<p><code><strong>&lt;section&gt;</strong></code>: Representa un bloque general del documento, usado para construir los bloques de contenidos</p>
+</li>
+<li>
+<p><code><strong>&lt;aside&gt;</strong></code>: Representa contenido relacionado con el contenido principal y se coloca a su lado, ejemplos &#8594; información en barras laterales &#8594; publicidad, entre otros&#8230;&#8203;</p>
+</li>
+<li>
+<p><code><strong>&lt;footer&gt;</strong></code>: Para definir el pie de página del docuemento.</p>
+</li>
+<li>
+<p><code><strong>&lt;article&gt;</strong></code>: Para definir y contener bloques de infomación &#8594; como articulos, bastante sugerente no? xD</p>
+</li>
+<li>
+<p><code><strong>&lt;figure&gt;</strong></code>: Dentro de ésta podemos contener imagenes, y/o contenido multimedia.</p>
+</li>
+<li>
+<p><code><strong>&lt;figcaption&gt;</strong></code>: Viene a ser la leyenda de la <strong>&lt;figure&gt;</strong> insertada</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Y así existen muchas otras etiquetas&#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_css3">CSS3</h3>
+<div class="paragraph">
+<p>Lenguaje de definición de estilos, con <strong>HTML5</strong> estructuramos, con <strong>CSS</strong> le damos color y vida, efectos, es decir; <em>"Lo ponemos pachuco xD"</em></p>
+</div>
+<div class="paragraph">
+<p>Acá hare referencia rápida a algunas propiedas nuevas que se están implementando ( en el libro que esta abajo se describen en profundidad ) :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>border-radius</strong></code>: Genera esquinas redondeadas a las cajas, posee dos parámetros:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>El primero determina la curvatura horizontal</p>
+</li>
+<li>
+<p>y el segundo la curvatura vertical
+pudiendose de esta forma crear una elipsis, ejemplo &#8594; <code><strong>border-radius: 10px / 15px;</strong></code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code><strong>box-shadow</strong></code>: Crea sombra a las cajas, puede tener 5 parámetros; Color, desplazamiento horizontal, desplazamiento vertical, valor de difuminación, y el valor <strong>inset</strong> para que la sombra sea interna. <code><strong>box-shadow: #ccc 3px 5px 10px inset</strong></code></p>
+</li>
+<li>
+<p><code><strong>text-shadow</strong></code>: Como es de esperar, es lo mismo que el anterior pero para los textos. Sencillo ;)</p>
+</li>
+<li>
+<p><code><strong>@font-face</strong></code>: Es una regla que nos permite cargar fuentes y su sintaxis es la siguiente &#8594; <code><strong>@font-face{ font-family: Mifuente; src: url('font.ttf') }</strong></code></p>
+</li>
+<li>
+<p><code><strong>transition</strong></code>: Crea una <em>transición</em> ( :O algo intuitivo, :) ), entre dos estados de un elemento, parámetros( hasta 4 ): propiedad afectada, tiempo que tomara la transición desde inicio a fin, como se realizara la transición <strong>ease</strong>, <strong>linear</strong>, <strong>ease-in</strong>, <strong>ease-out</strong>,<strong>ease-in-out</strong>, y un valor que determina el tiempo que tardará en comenzar, ejemplo &#8594; <code><strong>transition: color 3s linear 1s;</strong></code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_javascript">JavaScript</h3>
+<div class="paragraph">
+<p>Lenguaje de Programación del lado del cliente ( Aunque se ha vuelto tan potente y útil que ya lo vemos en desarrollos backend también )</p>
+</div>
+<div class="paragraph">
+<p>Haré referencia a sus APIs ( recuerda que todo esta más explicado en el libro que se encuentra en descarga gratuita más abajo)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>Canvas</strong></code>: Es una <strong>API</strong> de dibujo, para la creación y manipulación de gráficos.</p>
+</li>
+<li>
+<p><code><strong>Drag and Drop</strong></code>: Arrastrar y soltar es posible gracias a ella</p>
+</li>
+<li>
+<p><code><strong>Geolocation</strong></code>: Provee la ubicación fisica del dispositivo tomando datos de la información de la red,o el GPS.</p>
+</li>
+<li>
+<p><code><strong>Indexed Database</strong></code>:</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_http_adf_ly_13786f_target_blank_descargar_libro_a"><a href="http://adf.ly/13786f" target="_blank">Descargar Libro</a></h2>
+<div class="sectionbody">
+
 </div>
 </div>
           <div class="sect1">
