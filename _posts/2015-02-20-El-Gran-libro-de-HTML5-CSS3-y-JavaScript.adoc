@@ -17,6 +17,70 @@ Una mirada rápida de cada uno de ellos a continuación:
 
 Ps bien, como muchos ya conocemos, otros no tanto ( este libro es para todos :D ) es la quinta versión o revision de *HTML*, el lenguaje de marcado de etiquetas que se usa para maquetar y estructurar nuestras Webs!.
 
-Consideremos algunas etiquetas nuevas de *HTML5*
+Consideremos algunas etiquetas nuevas de *HTML5* que vienen a darle mayor contenido semántico a todo el documento que hagamos; así todo se vuelve mas _bonito_ y _comprensible_ :D
+
+* `*<header>*`: Tiene el propósito de contener la cabecera de una sección pero también puede ser utilizado para agrupar índices, formularios de búsqueda, logos, etc...
+
+* `*<nav>*`: Se usa para crear bloques de navegación, ejemplo -> Menús, 
+
+* `*<section>*`: Representa un bloque general del documento, usado para construir los bloques de contenidos
+
+* `*<aside>*`: Representa contenido relacionado con el contenido principal y se coloca a su lado, ejemplos -> información en barras laterales -> publicidad, entre otros... 
+
+* `*<footer>*`: Para definir el pie de página del docuemento.
+
+* `*<article>*`: Para definir y contener bloques de infomación -> como articulos, bastante sugerente no? xD
+
+* `*<figure>*`: Dentro de ésta podemos contener imagenes, y/o contenido multimedia.
+
+* `*<figcaption>*`: Viene a ser la leyenda de la *<figure>* insertada
+
+Y así existen muchas otras etiquetas...
+
+
+=== CSS3 
+
+Lenguaje de definición de estilos, con *HTML5* estructuramos, con *CSS* le damos color y vida, efectos, es decir; __"Lo ponemos pachuco xD"__
+
+Acá hare referencia rápida a algunas propiedas nuevas que se están implementando ( en el libro que esta abajo se describen en profundidad ) :
+
+* `*border-radius*`: Genera esquinas redondeadas a las cajas, posee dos parámetros:
+** El primero determina la curvatura horizontal 
+** y el segundo la curvatura vertical 
+pudiendose de esta forma crear una elipsis, ejemplo -> `*border-radius: 10px / 15px;*`
+
+* `*box-shadow*`: Crea sombra a las cajas, puede tener 5 parámetros; Color, desplazamiento horizontal, desplazamiento vertical, valor de difuminación, y el valor *inset* para que la sombra sea interna. `*box-shadow: #ccc 3px 5px 10px inset*`
+
+* `*text-shadow*`: Como es de esperar, es lo mismo que el anterior pero para los textos. Sencillo ;)
+
+* `*@font-face*`: Es una regla que nos permite cargar fuentes y su sintaxis es la siguiente -> `*@font-face{ font-family: Mifuente; src: url('font.ttf') }*`
+
+* `*transition*`: Crea una _transición_ ( :O algo intuitivo, :) ), entre dos estados de un elemento, parámetros( hasta 4 ): propiedad afectada, tiempo que tomara la transición desde inicio a fin, como se realizara la transición *ease*, *linear*, *ease-in*, *ease-out*,*ease-in-out*, y un valor que determina el tiempo que tardará en comenzar, ejemplo -> `*transition: color 3s linear 1s;*`
+
+
+
+=== JavaScript 
+
+Lenguaje de Programación del lado del cliente ( Aunque se ha vuelto tan potente y útil que ya lo vemos en desarrollos backend también )
+
+Haré referencia a sus APIs ( recuerda que todo esta más explicado en el libro que se encuentra en descarga gratuita más abajo)
+
+* `*Canvas*`: Es una *API* de dibujo, para la creación y manipulación de gráficos.
+* `*Drag and Drop*`: Arrastrar y soltar es posible gracias a ella
+* `*Geolocation*`: Provee la ubicación fisica del dispositivo tomando datos de la información de la red,o el GPS.
+* `*Indexed Database*`: 
+
+
+
+
+
+
+
+:linkattrs:
+
+== http://adf.ly/13786f[Descargar Libro, window="_blank"]
+
+ 
+
 
 
