@@ -5,7 +5,18 @@
 
 :hp-tags: HTML5, CSS3, JavaScript
 
+Les traigo en ésta oportunidad un muy buen libro que nos va a encaminar al desarrollo web, que trata de los lenguajes necesarios para hacerlo. Hacer paginitas, crear blog, hacer de internet un mejor lugar... xD, todo esto lo vamos a lograr con ellos.
 
-SObre HTML5, CSS3 y JavaScript
+* Html5
+* CSS3
+* y JavaScript
 
-Agregando un poco de codigo para probar
+Una mirada rápida de cada uno de ellos a continuación:
+
+=== HTML5
+
+Ps bien, como muchos ya conocemos, otros no tanto ( este libro es para todos :D ) es la quinta versión o revision de *HTML*, el lenguaje de marcado de etiquetas que se usa para maquetar y estructurar nuestras Webs!.
+
+Consideremos algunas etiquetas nuevas de *HTML5*
+
+
