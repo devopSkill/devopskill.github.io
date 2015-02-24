@@ -1,0 +1,13 @@
+= Referencia Rápida Laravel (Artisan) 
+
+
+A continuación les dejo un pequeño documento en PDF que les servirá como guia para trabajar con *Laravel*, el tan conocido Framework de PHP, se trata en esta ocasión de comando *Artisan*
+
+
+Espero que sea de utilidad para muchos, además de que se encuentra en español
+
+:linkattrs:
+
+== http://adf.ly/142AE2[Descargar , window="_blank"]
+Más adelante les iré dejando otros, no dejes de visitar :D
+
