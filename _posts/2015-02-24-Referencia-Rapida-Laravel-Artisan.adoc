@@ -1,5 +1,6 @@
 = Referencia Rápida Laravel (Artisan) 
 
+:hp-image: http://devopskill.github.io/images/laravel.jpg
 
 A continuación les dejo un pequeño documento en PDF que les servirá como guia para trabajar con *Laravel*, el tan conocido Framework de PHP, se trata en esta ocasión de comando *Artisan*
 
