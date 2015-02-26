@@ -4,41 +4,23 @@ v1.0, 2015-02-13
 :toc:
 :imagesdir: assets/images
 :homepage: http://blog.javierleon.com.ve
-:hp-tags: Blog,Personal
+:hp-tags: DevOps, BD, DBA, PostgreSQL, Backend
 // Web page meta data.
-:keywords: Blog, Javier León, IT, Devops, Desarrollo, Sysadmin, Social, Networks, emprendimiento, Pagina Oficial,
+:keywords: Blog, Javier León, DevOps, BD, DBA, PostgreSQL, Backend, IT, Devops, Desarrollo, Sysadmin, Social, Networks, emprendimiento, Pagina Oficial,
 :description: Blog personal y Profesional, +
 Ingeniero en Informatica, desarrollador y Administrador de Sistemas e infraestructura, +
 Redes Sociales, facebook, instagram, twitter, pinterest +
-proyectos de emprendimiento Freenlance, +
-Pagina principal.
+proyectos de emprendimiento Freenlance, + Pagina principal.
 
 
-PostgreSQL 9.3.
-------------
-{description}
+Conceptos Básicos para DBA's con PostgreSQL 9.3
 
-This book assumes the reader knows how to perform basic user operations such as connecting
-to the database and creating tables.
-The book covers the basic aspects of database administration from installation to cluster
-management.
-A couple of chapters are dedicated to the logical and physical structure in order to show
-both sides of coin. The triplet of maintenance backup and restore completes the the picture,
-not exhaustive but good enough to start getting “hands on” the product. The final chapter
-is dedicated to the developers. The various sections are giving advice that can seem quite
-3
-obvious. But it’s better to repeat things than having dangerous mistakes when building an
-application.
+Este libro para los no tan noveles requiere un dominio básico de las operaciones como, conexiones de la BD y Creación de tablas.
 
-La internet de las cosas .
+El autor prentende en esta obra cubrir los aspectos de la administración de BD y Gestión de Clusteres, de igual manera un par de capitulos están dedicados a la estructura fisica y logica para ver ambas caras de la moneda, la gestión de mantenimiento y restauración completan la tripleta.
 
-AsciiDoc is free software and is licenced under the terms of the 'GNU
-General Public License version 2' (GPLv2).
-
-TIP: The pages you are reading were written using AsciiDoc, to view
-the corresponding AsciiDoc source click on the *Page Source* menu item
-in the left hand margin.
-
+El libro posee la información necesaria para iniciar a ensuciarse las manos con uno de los proyectos BD más importante del momento, el capitulo final es dedicado a los desarrolladores, con lo necesario para comenzar a construir aplicaciones evitando cometer los errores más comunes!
+excelente material de obligatoria lectura.
 
 :linkattrs:
 
