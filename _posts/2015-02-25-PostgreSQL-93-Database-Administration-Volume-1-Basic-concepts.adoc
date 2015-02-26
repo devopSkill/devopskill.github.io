@@ -15,6 +15,14 @@ Pagina principal.
 
 .{revdate}:  {revnumber} 
 *******************************************************************
+
+
+____
+*******************************************************************
+PostgreSQL 9.3.
+------------
+{description}
+
 This book assumes the reader knows how to perform basic user operations such as connecting
 to the database and creating tables.
 The book covers the basic aspects of database administration from installation to cluster
@@ -26,12 +34,6 @@ is dedicated to the developers. The various sections are giving advice that can 
 3
 obvious. But it’s better to repeat things than having dangerous mistakes when building an
 application.
-
-____
-*******************************************************************
-Iniciando nuevo Blog.
-------------
-{description}
 
 La internet de las cosas .
 
