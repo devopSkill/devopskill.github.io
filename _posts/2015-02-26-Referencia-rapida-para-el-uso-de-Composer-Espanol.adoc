@@ -1,0 +1,37 @@
+= Referencia rápida para el uso de Composer [Español]
+
+
+:hp-image: http://devopskill.github.io/images/composer.jpg
+
+:hp-tags: Composer, PHP
+
+
+
+Acá tienes un compendio de los comandos más usados en *composer*, el muy conocido manejador de dependencias de *PHP*, que mejorará la interoperabilidad entre los desarrolladores y  hará que el desarrollo de nuestros proyectos sea mas fácil y rápido.
+
+
+=== Listado de  comandos comunes 
+
+
+* `*php composer.phar about*` : Información acerca de composer
+
+
+* `*php composer.phar archive*` : Crear un archivador del proyecto
+
+
+* `*php composer.phar help*` : Muestra la ayuda de todos lo comandos
+
+
+* `*php composer.phar install*` : Analiza el archivo composer.json y descarga las dependencias necesarias e instala en vendor
+
+
+* `*php composer.phar update*` :  Actualiza las dependencias a la última versión y el archivo composer.lock
+
+
+...y muchos más... Puedes descargar el compendio completo en formato PDF desde: 
+
+:linkattrs:
+
+== http://[Descargar Archivo, window="_blank"]
+
+Enjoy :D
