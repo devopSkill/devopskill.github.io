@@ -1,0 +1,35 @@
+= Por que amo lo que hago! 
+Javier León (@jelitox) <jel1284@gmail.com>
+v1.0, 2015-02-13
+:toc:
+:imagesdir: assets/images
+:homepage: http://blog.javierleon.com.ve
+:hp-tags: Blog,Personal
+// Web page meta data.
+:keywords: Blog, Javier León, IT, Devops, Desarrollo, Sysadmin, Social, Networks, emprendimiento, Pagina Oficial,
+:description: Blog personal y Profesional, +
+Ingeniero en Informatica, desarrollador y Administrador de Sistemas e infraestructura, +
+Redes Sociales, facebook, instagram, twitter, pinterest +
+proyectos de emprendimiento Freenlance, +
+Pagina principal.
+
+.{revdate}:  {revnumber} 
+*******************************************************************
+[quote, Steve jobs]
+Tu trabajo va a llenar gran parte de tu vida, y la única forma de estar realmente satisfecho con él es hacer lo que creas que es un gran trabajo. Y la única manera de hacer un trabajo genial es amar lo que haces. Si no lo has encontrado, sigue buscando. No te detengas. Al igual que con todos los asuntos del corazón, lo sabrás cuando lo encuentres. Y, como cualquier gran relación, sólo se pondrá mejor y mejor, conforme los años pasen. Así que sigue buscando hasta que lo encuentres. No te detengas.
+____
+*******************************************************************
+Iniciando nuevo Blog.
+------------
+{description}
+
+La internet de las cosas .
+
+AsciiDoc is free software and is licenced under the terms of the 'GNU
+General Public License version 2' (GPLv2).
+
+TIP: The pages you are reading were written using AsciiDoc, to view
+the corresponding AsciiDoc source click on the *Page Source* menu item
+in the left hand margin.
+
+http://adf.ly/148zHH
