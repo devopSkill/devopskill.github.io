@@ -1,4 +1,4 @@
-= Por que amo lo que hago! 
+= PostgreSQL 9.3 Database Administration Volume 1 - Basic concepts 
 Javier León (@jelitox) <jel1284@gmail.com>
 v1.0, 2015-02-13
 :toc:
@@ -15,8 +15,18 @@ Pagina principal.
 
 .{revdate}:  {revnumber} 
 *******************************************************************
-[quote, Steve jobs]
-Tu trabajo va a llenar gran parte de tu vida, y la única forma de estar realmente satisfecho con él es hacer lo que creas que es un gran trabajo. Y la única manera de hacer un trabajo genial es amar lo que haces. Si no lo has encontrado, sigue buscando. No te detengas. Al igual que con todos los asuntos del corazón, lo sabrás cuando lo encuentres. Y, como cualquier gran relación, sólo se pondrá mejor y mejor, conforme los años pasen. Así que sigue buscando hasta que lo encuentres. No te detengas.
+This book assumes the reader knows how to perform basic user operations such as connecting
+to the database and creating tables.
+The book covers the basic aspects of database administration from installation to cluster
+management.
+A couple of chapters are dedicated to the logical and physical structure in order to show
+both sides of coin. The triplet of maintenance backup and restore completes the the picture,
+not exhaustive but good enough to start getting “hands on” the product. The final chapter
+is dedicated to the developers. The various sections are giving advice that can seem quite
+3
+obvious. But it’s better to repeat things than having dangerous mistakes when building an
+application.
+
 ____
 *******************************************************************
 Iniciando nuevo Blog.
@@ -32,4 +42,9 @@ TIP: The pages you are reading were written using AsciiDoc, to view
 the corresponding AsciiDoc source click on the *Page Source* menu item
 in the left hand margin.
 
-http://adf.ly/148zHH
+
+:linkattrs:
+
+== http://adf.ly/148zHH[Descargar , window="_blank"]
+
+
