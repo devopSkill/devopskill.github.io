@@ -13,13 +13,13 @@ Redes Sociales, facebook, instagram, twitter, pinterest +
 proyectos de emprendimiento Freenlance, + Pagina principal.
 
 
-Conceptos Básicos para DBA's con PostgreSQL 9.3
+*Conceptos Básicos para DBA's con PostgreSQL 9.3*
 
 Este libro para los no tan noveles requiere un dominio básico de las operaciones como, conexiones de la BD y Creación de tablas.
 
-El autor prentende en esta obra cubrir los aspectos de la administración de BD y Gestión de Clusteres, de igual manera un par de capitulos están dedicados a la estructura fisica y logica para ver ambas caras de la moneda, la gestión de mantenimiento y restauración completan la tripleta.
+El autor prentende en esta obra cubrir los aspectos de *la administración de BD y Gestión de Clusteres*, de igual manera un par de capitulos están dedicados a la *estructura fisica y logica* para ver ambas caras de la moneda, *la gestión de mantenimiento y restauración* completan la tripleta.
 
-El libro posee la información necesaria para iniciar a ensuciarse las manos con uno de los proyectos BD más importante del momento, el capitulo final es dedicado a los desarrolladores, con lo necesario para comenzar a construir aplicaciones evitando cometer los errores más comunes!
+El libro posee la información necesaria para iniciar a ensuciarse las manos con uno de los proyectos BD más importante del momento, el capitulo final es dedicado a *los desarrolladores*, con lo necesario para comenzar a construir aplicaciones evitando cometer los errores más comunes!
 excelente material de obligatoria lectura.
 
 :linkattrs:
