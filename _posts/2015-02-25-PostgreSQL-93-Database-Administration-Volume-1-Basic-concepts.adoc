@@ -13,12 +13,7 @@ Redes Sociales, facebook, instagram, twitter, pinterest +
 proyectos de emprendimiento Freenlance, +
 Pagina principal.
 
-.{revdate}:  {revnumber} 
-*******************************************************************
 
-
-____
-*******************************************************************
 PostgreSQL 9.3.
 ------------
 {description}
