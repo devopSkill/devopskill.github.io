@@ -1,7 +1,7 @@
 = Referencia rápida para el uso de Composer [Español]
 
 
-:hp-image: http://devopskill.github.io/images/composer.jpg
+:hp-image: http://devopskill.github.io/images/composer.png
 
 :hp-tags: Composer, PHP
 
