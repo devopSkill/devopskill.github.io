@@ -11,7 +11,7 @@ v1.0, 2015-02-13
 Ingeniero en Informatica, desarrollador y Administrador de Sistemas e infraestructura, +
 Redes Sociales, facebook, instagram, twitter, pinterest +
 proyectos de emprendimiento Freenlance, + Pagina principal.
-
+:hp-image: http://devopskill.github.io/images/postgresql93dba.png
 
 *Conceptos Básicos para DBA's con PostgreSQL 9.3*
 
