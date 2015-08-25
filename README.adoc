@@ -2,6 +2,8 @@
 
 :toc:
 
+https://flattr.com/submit/auto?user_id=anthonny_q&url=https://github.com/HubPress/hubpress.io&title=HubPress&language=&tags=github&category=software[image:http://api.flattr.com/button/flattr-badge-large.png[]]
+
 == What Is HubPress?
 image::http://hubpress.io/img/editor.png[]
 
@@ -121,7 +123,7 @@ The *Theme* is selectable from the list of themes stored in the `/themes` direct
 
 ===== Google Analytics
 
-The *Google Analytics* field takes the unique Google Analytics code generated for the site.
+The *Google Analytics* field takes the Google Analytics Tracking ID of your site (e.g. UA-1234567-1).
 
 ===== Disqus Shortname
 
