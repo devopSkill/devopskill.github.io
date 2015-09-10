@@ -1,0 +1,238 @@
+= Ruby on Rails + Bootstrap
+:hp-tags: RubyOnRails, Ruby, Rails, Bootstrap
+
+
+
+
+En este post trataremos tres puntos importantes para la integracion de el framework para aplicaciones web Rails y el framework frontend Bootstrap:
+
+* Instalacion de Bootstrap en Rails
+* Uso en las vistas dentro de un proyecto Rails
+* Recomendaciones para de diseñar
+
+Antes de entrar de lleno con el contenido del post les daremos una pequeña reseña de lo que es Rails y bootstrap
+
+== ¿Que es bootstrap?
+
+Bootstrap es un framework frontend, es decir que trabaja en el navegador y sirve para diseña la interfaz de las paginas web, Bootstrap fue inicialmente creado por twitter que permite crear interfaces web con CSS y JavaScript, una de las particularidades de Bootstrap es su capacidad para adaptarse al tamaño de la pantalla donde se muestre(Responsive Design). Leer mas link:view-source:getbootstrap.com[Bootstrap]
+
+== ¿Que es Rails?
+
+Rails es un framework backend que funciona con el lenguaje de programación Ruby, esta diseñado para hacer aplicaciones web de manera mucho mas sencilla, de manera que puedas hacer mucho con poco codigo. Leer mas link:view-source:rubyonrails.org[Ruby on Rails]
+
+==  Instalacion de Bootstrap en Rails
+
+Primero crearemos una aplicacion de Rails de ejemplo para instalarle Bootstrap, seria una aplicacion con una lista simple, empecemos:
+
+NOTE: rails new rails_bootstrap
+
+Luego generamos un controlador con su vista de ejemplo
+
+NOTE: rails g controller Principal index
+
+Despues de que Rails se encarga de crear nuestro controlador y nuestra vista, nos dirigimos a *config/routes.rb* para indicar a nuestra aplicacion de que la vista creada va a ser la de entrada. colocaremos el siguiente codigo
+
+NOTE: root 'principal#index'
+
+lista aqui link:view-source:localhost:3000[Principal]
+
+Ahora si viene lo bueno xD
+Colocaremos las gemas necesarias para que bootstrap funcione dentro de nuestra aplicacion, estas lineas de codigo van dentro del archivo *Gemfile*
+
+NOTE:  gem 'bootstrap-sass' +
+			gem 'autoprefixer-rails'
+            
+Y corremos el comando en nuestra terminal 
+
+NOTE: bundle install
+
+Ya tenemos bootstrap instalado en nuestra aplicacion, para que nuestra aplicación empiece a aplicar los estilos de Bootstrap es necesario ciertas cosas. Primero cambiaresmos el nombre de *app/assets/stylesheets/application.css* a *app/assets/stylesheets/application.css.sass* y colocaremos las siguientes lineas
+
+NOTE: 	@import "bootstrap-sprockets" +
+			@import "bootstrap"
+            
+Y dentro de *app/assets/javascrips/application.js* colocaremos debajo de *//= require jquery-ujs*
+
+NOTE: //= require bootstrap-sprockets
+
+Y felicitaciones ya podemos utilizar bootstrap dentro de nuestro proyecto xD
+
+== Uso en las vistas dentro de un proyecto Rails
+
+Ahora que podemos utilizar bootstrap dentro de nuestra aplicación, nos dirigimos a la vista que anteriormente creamos ubicada en *app/views/principal/index.html.erb*
+
+En el codigo a continuación podremos observar que las clases predeterminadas que tiene bootstrap se pueden utilizar tanto en el codigo HTML puro como en el codigo Embedded Ruby.
+
+[source,html]
+----
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" 		                  data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <%= link_to "Start Bootstrap", root_path, class: 'navbar-brand' %>
+            </div>     
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    <header class="business-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="tagline">Business Name or Tagline</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>What We Do</h2>
+                <p>Introduce the visitor to the business using clear, informative text. Use well-targeted keywords within your sentences to make sure search engines can find the business.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
+                <p>
+                    <a class="btn btn-default btn-lg" href="#">Call to Action &raquo;</a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Contact Us</h2>
+                <address>
+                    <strong>Start Bootstrap</strong>
+                    <br>3481 Melrose Place
+                    <br>Beverly Hills, CA 90210
+                    <br>
+                </address>
+                <address>
+                    <abbr title="Phone">P:</abbr>(123) 456-7890
+                    <br>
+                    <abbr title="Email">E:</abbr> <a href="mailto:#">name@example.com</a>
+                </address>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
+                <h2>Marketing Box #1</h2>
+                <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
+                <h2>Marketing Box #2</h2>
+                <p>The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
+                <h2>Marketing Box #3</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+----
+
+Podemos observar como se utilizan las clases de estilos predeterminadas de Bootstrap dentro de los tags de HTML y de codigo Embedded Ruby
+
+NOTE: <div class="row content"></div> +
+      <%= link_to "Start Bootstrap, root_path, class: 'navbar-brand' %>
+      
+      
+Para terminar de darle estilo a nuesta pagina de entrada copiaran el siguiente codigo dentro de *app/assets/stylesheets/principal.scss*
+
+----
+/*!
+ * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+    height: 400px;
+    background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+footer {
+    margin: 50px 0;
+}
+----
+
+Corremos el servidor
+
+NOTE: rails s
+
+Y podemos observar nuestra pagina link:view-source:localhost:3000[Aqui]
+
+== Recomendaciones para diseñar
+
+Bootstrap es un framework que tiene una gran comunidad de desarrolladores por detras, es por ello que te dare unos links interesantes para empezar a diseñar con facilidad.
+
+* Primero que todo esta la pagina oficial de bootstrap link:view-source:getbootstrap.com[getbootstrap.com], en el cual podras encontrar los componentes, el sistema de grid y toda la informacion necesaria para diseñar con Bootstrap.
+
+* Ahora tenemos link:view-source:bootsnipp.com[Bootsnipp], la cual es una galeria de snippets de bootstrap, basicamente solo tendriamos que copiar y pegar codigo para tener nuestra interfaz personalizada.
+
+* Por ultimo esta link:view-source:startbootstrap.com[StartBootstrap.com] donde encontrarems una variada serie de Templates para nuestro proyectos, inclusive para este post utilizamos el template link:view-source:http://startbootstrap.com/template-overviews/business-frontpage/[Bussines frontpage]. Pueden observar que solo reutilizamos codigo y el css personalizado lo ubicamos en el archivo *SCSS* que nos genero rails por defecto con el scaffold.
+
+Puedes conseguir el codigo de este post en mi repositorio de link:view-source:https://github.com/enmanuelm19/rails_bootstrap[Github].
+
+
+=== Acerca del autor
+
+
+[cols="2,8"]
+|===
+
+| image:http://imgur.com/HgnGus9.jpg[100,100] |
+
+Desarrollador Web, Amante de Ruby on Rails y el OpenSource + 
+icon:twitter[] link:view-source:https://twitter.com/Enmanuel19[@Enmanuel19] +
+icon:google-plus[] link:view-source:https://plus.google.com/117900964128210459102[Enmanuel+] +
+icon:github-alt[] link:view-source:https://github.com/enmanuelm19/[Enmanuelm19] + 
+icon:linkedin[] link:view-source:ve.linkedin.com/in/enmanuelmedina[Enmanuel Medina]
+
+
+|===
