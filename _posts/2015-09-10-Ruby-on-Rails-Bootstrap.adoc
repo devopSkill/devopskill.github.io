@@ -163,6 +163,7 @@ NOTE: <div class="row content"></div> +
       
 Para terminar de darle estilo a nuesta pagina de entrada copiaran el siguiente codigo dentro de *app/assets/stylesheets/principal.scss*
 
+[source,css]
 ----
 /*!
  * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
