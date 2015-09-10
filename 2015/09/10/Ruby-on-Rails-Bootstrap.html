@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ruby on Rails + Bootstrap</title>
+    <meta name="description" content="" />
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//devopskill.com.ve/themes/Saga/assets/css/style.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//devopskill.com.ve/themes/Saga/assets/css/animate.min.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//devopskill.com.ve/themes/Saga/favicon.ico" rel="shortcut icon">
+    <link rel="canonical" href="http://devopskill.com.ve/2015/09/10/Ruby-on-Rails-Bootstrap.html" />
+    
+    <meta property="og:site_name" content="DevopSkill - Desarrolladores hábiles! " />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ruby on Rails + Bootstrap" />
+    <meta property="og:description" content="En este post trataremos tres puntos importantes para la integracion de el framework para aplicaciones web Rails y el framework frontend Bootstrap: Instalacion de Bootstrap en Rails Uso en las vistas dentro de un proyecto Rails Recomendaciones para de diseñar..." />
+    <meta property="og:url" content="http://devopskill.com.ve/2015/09/10/Ruby-on-Rails-Bootstrap.html" />
+    <meta property="article:published_time" content="2015-09-10T04:30:00.000Z" />
+    <meta property="article:modified_time" content="2015-09-10T21:45:25.888Z" />
+    <meta property="article:tag" content="RubyOnRails" />
+    <meta property="article:tag" content="Ruby" />
+    <meta property="article:tag" content="Rails" />
+    <meta property="article:tag" content="Bootstrap" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Ruby on Rails + Bootstrap" />
+    <meta name="twitter:description" content="En este post trataremos tres puntos importantes para la integracion de el framework para aplicaciones web Rails y el framework frontend Bootstrap: Instalacion de Bootstrap en Rails Uso en las vistas dentro de un proyecto Rails Recomendaciones para de diseñar..." />
+    <meta name="twitter:url" content="http://devopskill.com.ve/2015/09/10/Ruby-on-Rails-Bootstrap.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "DevopSkill - Desarrolladores hábiles! ",
+    "author": {
+        "@type": "Person",
+        "name": "Alex",
+        "image": "https://avatars.githubusercontent.com/u/5685199?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": null
+    },
+    "headline": "Ruby on Rails + Bootstrap",
+    "url": "http://devopskill.com.ve/2015/09/10/Ruby-on-Rails-Bootstrap.html",
+    "datePublished": "2015-09-10T04:30:00.000Z",
+    "dateModified": "2015-09-10T21:45:25.888Z",
+    "keywords": "RubyOnRails,  Ruby,  Rails,  Bootstrap",
+    "description": "En este post trataremos tres puntos importantes para la integracion de el framework para aplicaciones web Rails y el framework frontend Bootstrap: Instalacion de Bootstrap en Rails Uso en las vistas dentro de un proyecto Rails Recomendaciones para de diseñar..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="DevopSkill - Desarrolladores hábiles! " href="http://devopskill.com.ve/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-RubyOnRails tag-Ruby tag-Rails tag-Bootstrap">
+    <header id="header" class="animated fadeIn">
+    <div class="header-background">
+    <section class="blog-content">
+        <a id="site-url" class="blog-title" href="http://devopskill.com.ve">DevopSkill - Desarrolladores hábiles! </a>
+        <span class="blog-description">Conocimiento al alcance de Click</span>
+        <nav class="links fadeIn animated">
+            <ul>
+                <!-- <li class="rss"><a title="RSS Feed" href="/rss/"><i class="fa fa-fw fa-rss-square"></i></a></li> -->
+        
+            </ul>
+        </nav>
+    </section>
+    <section class="header-content">
+        <h1 class="post-title animated fadeInUp">Ruby on Rails + Bootstrap</h1>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1441859400" datetime="2015-09-10T00:00" title="10 September 2015">2015-09-10 00:00:00<ago class="ago"></time></span>
+            <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="http://devopskill.com.ve/tag/RubyOnRails">RubyOnRails</a>, <a href="http://devopskill.com.ve/tag/Ruby"> Ruby</a>, <a href="http://devopskill.com.ve/tag/Rails"> Rails</a>, <a href="http://devopskill.com.ve/tag/Bootstrap"> Bootstrap</a></span>
+            <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="">Alex</a></span></span>
+    </section>
+    </div>
+</header>
+<main id="main" class="content">
+    <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-RubyOnRails tag-Ruby tag-Rails tag-Bootstrap">
+        <section class="post-content">
+        <div id="begin_post" style="display: inline-block; float:left; margin-right: 10px;">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- begin_post -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:300px;height:250px"
+               data-ad-client="ca-pub-7093011170315621"
+               data-ad-slot="6547907169"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>En este post trataremos tres puntos importantes para la integracion de el framework para aplicaciones web Rails y el framework frontend Bootstrap:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Instalacion de Bootstrap en Rails</p>
+</li>
+<li>
+<p>Uso en las vistas dentro de un proyecto Rails</p>
+</li>
+<li>
+<p>Recomendaciones para de diseñar</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Antes de entrar de lleno con el contenido del post les daremos una pequeña reseña de lo que es Rails y bootstrap</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__que_es_bootstrap">¿Que es bootstrap?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bootstrap es un framework frontend, es decir que trabaja en el navegador y sirve para diseña la interfaz de las paginas web, Bootstrap fue inicialmente creado por twitter que permite crear interfaces web con CSS y JavaScript, una de las particularidades de Bootstrap es su capacidad para adaptarse al tamaño de la pantalla donde se muestre(Responsive Design). Leer mas <a href="view-source:getbootstrap.com">Bootstrap</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__que_es_rails">¿Que es Rails?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Rails es un framework backend que funciona con el lenguaje de programación Ruby, esta diseñado para hacer aplicaciones web de manera mucho mas sencilla, de manera que puedas hacer mucho con poco codigo. Leer mas <a href="view-source:rubyonrails.org">Ruby on Rails</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_instalacion_de_bootstrap_en_rails">Instalacion de Bootstrap en Rails</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Primero crearemos una aplicacion de Rails de ejemplo para instalarle Bootstrap, seria una aplicacion con una lista simple, empecemos:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+rails new rails_bootstrap
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Luego generamos un controlador con su vista de ejemplo</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+rails g controller Principal index
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Despues de que Rails se encarga de crear nuestro controlador y nuestra vista, nos dirigimos a <strong>config/routes.rb</strong> para indicar a nuestra aplicacion de que la vista creada va a ser la de entrada. colocaremos el siguiente codigo</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+root 'principal#index'
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>lista aqui <a href="view-source:localhost:3000">Principal</a></p>
+</div>
+<div class="paragraph">
+<p>Ahora si viene lo bueno xD
+Colocaremos las gemas necesarias para que bootstrap funcione dentro de nuestra aplicacion, estas lineas de codigo van dentro del archivo <strong>Gemfile</strong></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+gem 'bootstrap-sass'<br>
+			gem 'autoprefixer-rails'
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Y corremos el comando en nuestra terminal</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+bundle install
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Ya tenemos bootstrap instalado en nuestra aplicacion, para que nuestra aplicación empiece a aplicar los estilos de Bootstrap es necesario ciertas cosas. Primero cambiaresmos el nombre de <strong>app/assets/stylesheets/application.css</strong> a <strong>app/assets/stylesheets/application.css.sass</strong> y colocaremos las siguientes lineas</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+@import "bootstrap-sprockets"<br>
+			@import "bootstrap"
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Y dentro de <strong>app/assets/javascrips/application.js</strong> colocaremos debajo de <strong>//= require jquery-ujs</strong></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+//= require bootstrap-sprockets
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Y felicitaciones ya podemos utilizar bootstrap dentro de nuestro proyecto xD</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uso_en_las_vistas_dentro_de_un_proyecto_rails">Uso en las vistas dentro de un proyecto Rails</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ahora que podemos utilizar bootstrap dentro de nuestra aplicación, nos dirigimos a la vista que anteriormente creamos ubicada en <strong>app/views/principal/index.html.erb</strong></p>
+</div>
+<div class="paragraph">
+<p>En el codigo a continuación podremos observar que las clases predeterminadas que tiene bootstrap se pueden utilizar tanto en el codigo HTML puro como en el codigo Embedded Ruby.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="navbar-header"&gt;
+                &lt;button type="button" class="navbar-toggle" data-toggle="collapse" 		                  data-target="#bs-example-navbar-collapse-1"&gt;
+                    &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;%= link_to "Start Bootstrap", root_path, class: 'navbar-brand' %&gt;
+            &lt;/div&gt;
+            &lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
+                &lt;ul class="nav navbar-nav"&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;About&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;Services&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;Contact&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;header class="business-header"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-lg-12"&gt;
+                    &lt;h1 class="tagline"&gt;Business Name or Tagline&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class="container"&gt;
+        &lt;hr&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-sm-8"&gt;
+                &lt;h2&gt;What We Do&lt;/h2&gt;
+                &lt;p&gt;Introduce the visitor to the business using clear, informative text. Use well-targeted keywords within your sentences to make sure search engines can find the business.&lt;/p&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.&lt;/p&gt;
+                &lt;p&gt;
+                    &lt;a class="btn btn-default btn-lg" href="#"&gt;Call to Action &amp;raquo;&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-4"&gt;
+                &lt;h2&gt;Contact Us&lt;/h2&gt;
+                &lt;address&gt;
+                    &lt;strong&gt;Start Bootstrap&lt;/strong&gt;
+                    &lt;br&gt;3481 Melrose Place
+                    &lt;br&gt;Beverly Hills, CA 90210
+                    &lt;br&gt;
+                &lt;/address&gt;
+                &lt;address&gt;
+                    &lt;abbr title="Phone"&gt;P:&lt;/abbr&gt;(123) 456-7890
+                    &lt;br&gt;
+                    &lt;abbr title="Email"&gt;E:&lt;/abbr&gt; &lt;a href="mailto:#"&gt;name@example.com&lt;/a&gt;
+                &lt;/address&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-sm-4"&gt;
+                &lt;img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt=""&gt;
+                &lt;h2&gt;Marketing Box #1&lt;/h2&gt;
+                &lt;p&gt;These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-4"&gt;
+                &lt;img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt=""&gt;
+                &lt;h2&gt;Marketing Box #2&lt;/h2&gt;
+                &lt;p&gt;The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-4"&gt;
+                &lt;img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt=""&gt;
+                &lt;h2&gt;Marketing Box #3&lt;/h2&gt;
+                &lt;p&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr&gt;
+        &lt;footer&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-lg-12"&gt;
+                    &lt;p&gt;Copyright &amp;copy; Your Website 2014&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+    &lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Podemos observar como se utilizan las clases de estilos predeterminadas de Bootstrap dentro de los tags de HTML y de codigo Embedded Ruby</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+&lt;div class="row content"&gt;&lt;/div&gt;<br>
+      &lt;%= link_to "Start Bootstrap, root_path, class: 'navbar-brand' %&gt;
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Para terminar de darle estilo a nuesta pagina de entrada copiaran el siguiente codigo dentro de <strong>app/assets/stylesheets/principal.scss</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>/*!
+ * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+    height: 400px;
+    background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+footer {
+    margin: 50px 0;
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Corremos el servidor</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+rails s
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Y podemos observar nuestra pagina <a href="view-source:localhost:3000">Aqui</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_recomendaciones_para_dise_ar">Recomendaciones para diseñar</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bootstrap es un framework que tiene una gran comunidad de desarrolladores por detras, es por ello que te dare unos links interesantes para empezar a diseñar con facilidad.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Primero que todo esta la pagina oficial de bootstrap <a href="view-source:getbootstrap.com">getbootstrap.com</a>, en el cual podras encontrar los componentes, el sistema de grid y toda la informacion necesaria para diseñar con Bootstrap.</p>
+</li>
+<li>
+<p>Ahora tenemos <a href="view-source:bootsnipp.com">Bootsnipp</a>, la cual es una galeria de snippets de bootstrap, basicamente solo tendriamos que copiar y pegar codigo para tener nuestra interfaz personalizada.</p>
+</li>
+<li>
+<p>Por ultimo esta <a href="view-source:startbootstrap.com">StartBootstrap.com</a> donde encontrarems una variada serie de Templates para nuestro proyectos, inclusive para este post utilizamos el template <a href="view-source:http://startbootstrap.com/template-overviews/business-frontpage/">Bussines frontpage</a>. Pueden observar que solo reutilizamos codigo y el css personalizado lo ubicamos en el archivo <strong>SCSS</strong> que nos genero rails por defecto con el scaffold.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Puedes conseguir el codigo de este post en mi repositorio de <a href="view-source:https://github.com/enmanuelm19/rails_bootstrap">Github</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_acerca_del_autor">Acerca del autor</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="http://imgur.com/HgnGus9.jpg" alt="100" width="100"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Desarrollador Web, Amante de Ruby on Rails y el OpenSource<br>
+<span class="icon"><i class="fa fa-twitter"></i></span> <a href="view-source:https://twitter.com/Enmanuel19">@Enmanuel19</a><br>
+<span class="icon"><i class="fa fa-google-plus"></i></span> <a href="view-source:https://plus.google.com/117900964128210459102">Enmanuel+</a><br>
+<span class="icon"><i class="fa fa-github-alt"></i></span> <a href="view-source:https://github.com/enmanuelm19/">Enmanuelm19</a><br>
+<span class="icon"><i class="fa fa-linkedin"></i></span> <a href="view-source:ve.linkedin.com/in/enmanuelmedina">Enmanuel Medina</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+          <div class="sect1">
+            <div id="download">
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- download -->
+              <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-7093011170315621"
+              data-ad-slot="2660934362"
+              data-ad-format="auto"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+          </div>
+        </div>
+        </section>
+
+    
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'devopskillcomve'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    
+    </article>
+
+</main>
+    <footer class="animated fadeIn" id="footer">
+        <section class="colophon">
+          <section class="copyright">Copyright &copy; <span itemprop="copyrightHolder">DevopSkill - Desarrolladores hábiles! </span>. <span rel="license">All Rights Reserved</span>.</section>
+          <section class="poweredby">Published with <a class="icon-ghost" href="http://hubpress.io">HubPress</a></section>
+        </section>
+        <section class="bottom">
+          <section class="attribution">
+            <a href="http://github.com/Reedyn/Saga">Built with <i class="fa fa-heart"></i> and Free and Open-Source Software</a>.
+          </section>
+        </section>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+    <script src="//devopskill.com.ve/themes/Saga/assets/js/scripts.js?v=1.0.0"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59969315-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
