@@ -1,6 +1,6 @@
 = Ruby on Rails + Bootstrap
 :hp-tags: RubyOnRails, Ruby, Rails, Bootstrap
-
+:hp-image: http://i.imgur.com/f957OqT.png
 
 
 
