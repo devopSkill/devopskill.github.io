@@ -221,8 +221,8 @@ Puedes conseguir el codigo de este post en mi repositorio de link:view-source:ht
 | image:http://imgur.com/HgnGus9.jpg[100,100] |
 
 Desarrollador Web, Amante de Ruby on Rails y el OpenSource + 
-icon:twitter[] :linkattrs:
-https://twitter.com/Enmanuel19[@Enmanuel19, window="_blank"] +
+:linkattrs:
+icon:twitter[] https://twitter.com/Enmanuel19[@Enmanuel19, window="_blank"] +
 icon:google-plus[] link:view-source:https://plus.google.com/117900964128210459102[Enmanuel+] +
 icon:github-alt[] link:view-source:https://github.com/enmanuelm19/[Enmanuelm19] + 
 icon:linkedin[] link:view-source:ve.linkedin.com/in/enmanuelmedina[Enmanuel Medina]
