@@ -1,5 +1,6 @@
 = Ruby on Rails + Material Design
 :hp-tags: RubyOnRails, Ruby, Rails, Material, Design, MaterialDesign
+:hp-image: http://i.imgur.com/AfEh0rW.png
 
 Anteriormente en este magnifico blog de desarrolladores colocamos
 link:view-source:http://devopskill.com.ve/2015/09/10/Ruby-on-Rails-Bootstrap.html[*como integrar
