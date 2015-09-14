@@ -1,0 +1,212 @@
+= Ruby on Rails + Material Design
+:hp-tags: RubyOnRails, Ruby, Rails, Material, Design, MaterialDesign
+
+Anteriormente en este magnifico blog de desarrolladores colocamos
+link:view-source:http://devopskill.com.ve/2015/09/10/Ruby-on-Rails-Bootstrap.html[*como integrar
+un gran framework frontend como Bootstrap y el framework backend Rails*], En esta
+ocasion aprenderemos como integrar un framework frontend basado en la filosofia
+ de diseño creada por Google *Material Design* con el framework backend *Rails*.
+
+ En este post cubriremos los siguiente puntos:
+
+ * Instalación de Material Design en un proyecto Rails
+ * Uso en las vistas de un proyecto Rails
+ * Recomendaciones para diseñar
+
+== ¿Que es Material Design?
+
+Es un estilo de diseño creado por *Google*, el cual tiene como principio que
+cada pieza este colocada en un momento y espacio determinado, creado con la
+finalidad de unificar en un estilo la parte web y movil del software.
+
+== Instalación de Material Design en un proyecto Rails
+
+Primero crearemos una aplicación en Rails
+
+NOTE: rails new rails_material
+
+Ahora para tener nuestra vista principal crearemos el controlador respectivo
+
+NOTE: rails g controller Principal index
+
+Despues de que rails haga su magia modificaremos el archivo *config/routes.rb*
+y colocaremos la siguiente linea:
+
+NOTE: root 'Principal#index'
+
+Ahora colocaremos las gemas necesarias para que el framework Material trabaje
+dentro de nuestro proyecto, dentro del archivo *Gemfile* colocaremos lo siguiente:
+
+NOTE:  gem 'materialize-sass' +
+gem 'autoprefixer-rails'
+
+Y para instalarla corremos el siguiente comando en nuestra terminal:
+
+NOTE: bundle install
+
+Ahora en orden para que Materialize funcione modificaremos el archivo que por
+defecto nos crea rails *app/assets/stylesheets/application.css* lo cambiaremos
+por *app/assets/stylesheets/application.scss* y colocaremos lo siguiente:
+
+NOTE: @import "materialize/components/color"; +
+$primary-color: color("blue", "lighten-2") !default; +
+@import "materialize";
+
+Ahora dentro del archivo *app/assets/javascripts/application.js* colocaremos lo siguiente
+bajo *//=require jquery_ujs*
+
+NOTE: //= require materialize-sprockets
+
+Y listo ya puedes empezar a utilizar Materialize dentro de tu proyecto xD
+
+== Uso en las vistas de un proyecto Rails
+
+Ahora que podemos utilizar MaterialDesign dentro de nuestro proyecto nos ubicaremos
+dentro de el siguiente archivo *app/views/principal/index.html.erb*, luego copiaremos
+el siguiente codigo donde observamos como se utilizan las clases predeterminadas
+que posee el framework.
+
+[source,html]
+----
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Starter Template</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      </div>
+      <div class="row center">
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><%= link_to "Link 1", root_path , class: 'white-text' %></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+----
+
+Podemos observar como se utilizan las clases predeterminadas del framework
+tanto en *HTML* como en *ERB*
+
+NOTE:   <li><%= link_to "Link 1", root_path , class: 'white-text' %></li> +
+  <li><a class="white-text" href="#!">Link 2</a></li>
+
+Ahora corremos el servidor
+
+NOTE: rails s
+
+Podemos observar nuestra pagina link:view-source:localhost:3000[Aqui]
+
+== Recomendaciones para diseñar
+
+Actualmente este framework tiene menor popularidad que *Bootstrap* pero va aumentando
+con el tiempo, para saber mas acerca de los componentes y los diseños creados con *Material Design*
+puedes verlos link:view-source:http://materializecss.com/[Aqui].
+
+Todo el codigo que se realizo en este post lo puedes encontrar link:view-source:https://github.com/enmanuelm19/rails_material[Aqui]
+
+=== Acerca del autor
+
+
+[cols="2,8"]
+|===
+
+| image:http://imgur.com/HgnGus9.jpg[100,100] |
+
+Desarrollador Web, Amante de Ruby on Rails y el OpenSource +
+icon:twitter[] link:view-source:https://twitter.com/Enmanuel19[@Enmanuel19] +
+icon:google-plus[] link:view-source:https://plus.google.com/117900964128210459102[Enmanuel+] +
+icon:github-alt[] link:view-source:https://github.com/enmanuelm19/[Enmanuelm19] +
+icon:linkedin[] link:view-source:ve.linkedin.com/in/enmanuelmedina[Enmanuel Medina]
+
+
+|===
