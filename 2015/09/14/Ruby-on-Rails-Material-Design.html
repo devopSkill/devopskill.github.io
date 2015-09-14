@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ruby on Rails + Material Design</title>
+    <meta name="description" content="" />
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//devopskill.com.ve/themes/Saga/assets/css/style.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//devopskill.com.ve/themes/Saga/assets/css/animate.min.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//devopskill.com.ve/themes/Saga/favicon.ico" rel="shortcut icon">
+    <link rel="canonical" href="http://devopskill.com.ve/2015/09/14/Ruby-on-Rails-Material-Design.html" />
+    
+    <meta property="og:site_name" content="DevopSkill - Desarrolladores hábiles! " />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ruby on Rails + Material Design" />
+    <meta property="og:description" content="Anteriormente en este magnifico blog de desarrolladores colocamos como integrar un gran framework frontend como Bootstrap y el framework backend Rails, En esta ocasion aprenderemos como integrar un framework frontend basado en la filosofia  de diseño creada por Google Material..." />
+    <meta property="og:url" content="http://devopskill.com.ve/2015/09/14/Ruby-on-Rails-Material-Design.html" />
+    <meta property="og:image" content="http://i.imgur.com/AfEh0rW.png" />
+    <meta property="article:published_time" content="2015-09-14T04:30:00.000Z" />
+    <meta property="article:modified_time" content="2015-09-14T19:30:24.023Z" />
+    <meta property="article:tag" content="RubyOnRails" />
+    <meta property="article:tag" content="Ruby" />
+    <meta property="article:tag" content="Rails" />
+    <meta property="article:tag" content="Material" />
+    <meta property="article:tag" content="Design" />
+    <meta property="article:tag" content="MaterialDesign" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ruby on Rails + Material Design" />
+    <meta name="twitter:description" content="Anteriormente en este magnifico blog de desarrolladores colocamos como integrar un gran framework frontend como Bootstrap y el framework backend Rails, En esta ocasion aprenderemos como integrar un framework frontend basado en la filosofia  de diseño creada por Google Material..." />
+    <meta name="twitter:url" content="http://devopskill.com.ve/2015/09/14/Ruby-on-Rails-Material-Design.html" />
+    <meta name="twitter:image:src" content="http://i.imgur.com/AfEh0rW.png" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "DevopSkill - Desarrolladores hábiles! ",
+    "author": {
+        "@type": "Person",
+        "name": null,
+        "image": "https://avatars.githubusercontent.com/u/8698539?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": null
+    },
+    "headline": "Ruby on Rails + Material Design",
+    "url": "http://devopskill.com.ve/2015/09/14/Ruby-on-Rails-Material-Design.html",
+    "datePublished": "2015-09-14T04:30:00.000Z",
+    "dateModified": "2015-09-14T19:30:24.023Z",
+    "image": "http://i.imgur.com/AfEh0rW.png",
+    "keywords": "RubyOnRails,  Ruby,  Rails,  Material,  Design,  MaterialDesign",
+    "description": "Anteriormente en este magnifico blog de desarrolladores colocamos como integrar un gran framework frontend como Bootstrap y el framework backend Rails, En esta ocasion aprenderemos como integrar un framework frontend basado en la filosofia  de diseño creada por Google Material..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="DevopSkill - Desarrolladores hábiles! " href="http://devopskill.com.ve/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-RubyOnRails tag-Ruby tag-Rails tag-Material tag-Design tag-MaterialDesign">
+    <header id="header" class="animated fadeIn" style="background-image: url(http://i.imgur.com/AfEh0rW.png)">
+    <div class="header-background">
+    <section class="blog-content">
+        <a id="site-url" class="blog-title" href="http://devopskill.com.ve">DevopSkill - Desarrolladores hábiles! </a>
+        <span class="blog-description">Conocimiento al alcance de Click</span>
+        <nav class="links fadeIn animated">
+            <ul>
+                <!-- <li class="rss"><a title="RSS Feed" href="/rss/"><i class="fa fa-fw fa-rss-square"></i></a></li> -->
+        
+            </ul>
+        </nav>
+    </section>
+    <section class="header-content">
+        <h1 class="post-title animated fadeInUp">Ruby on Rails + Material Design</h1>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1442205000" datetime="2015-09-14T00:00" title="14 September 2015">2015-09-14 00:00:00<ago class="ago"></time></span>
+            <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="http://devopskill.com.ve/tag/RubyOnRails">RubyOnRails</a>, <a href="http://devopskill.com.ve/tag/Ruby"> Ruby</a>, <a href="http://devopskill.com.ve/tag/Rails"> Rails</a>, <a href="http://devopskill.com.ve/tag/Material"> Material</a>, <a href="http://devopskill.com.ve/tag/Design"> Design</a>, <a href="http://devopskill.com.ve/tag/MaterialDesign"> MaterialDesign</a></span>
+            <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href=""></a></span></span>
+    </section>
+    </div>
+</header>
+<main id="main" class="content">
+    <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-RubyOnRails tag-Ruby tag-Rails tag-Material tag-Design tag-MaterialDesign">
+        <section class="post-content">
+        <div id="begin_post" style="display: inline-block; float:left; margin-right: 10px;">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- begin_post -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:300px;height:250px"
+               data-ad-client="ca-pub-7093011170315621"
+               data-ad-slot="6547907169"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Anteriormente en este magnifico blog de desarrolladores colocamos
+<a href="view-source:http://devopskill.com.ve/2015/09/10/Ruby-on-Rails-Bootstrap.html"><strong>como integrar
+un gran framework frontend como Bootstrap y el framework backend Rails</strong></a>, En esta
+ocasion aprenderemos como integrar un framework frontend basado en la filosofia
+ de diseño creada por Google <strong>Material Design</strong> con el framework backend <strong>Rails</strong>.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>En este post cubriremos los siguiente puntos:</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Instalación de Material Design en un proyecto Rails</p>
+</li>
+<li>
+<p>Uso en las vistas de un proyecto Rails</p>
+</li>
+<li>
+<p>Recomendaciones para diseñar</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__que_es_material_design">¿Que es Material Design?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Es un estilo de diseño creado por <strong>Google</strong>, el cual tiene como principio que
+cada pieza este colocada en un momento y espacio determinado, creado con la
+finalidad de unificar en un estilo la parte web y movil del software.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_instalaci_n_de_material_design_en_un_proyecto_rails">Instalación de Material Design en un proyecto Rails</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Primero crearemos una aplicación en Rails</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+rails new rails_material
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Ahora para tener nuestra vista principal crearemos el controlador respectivo</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+rails g controller Principal index
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Despues de que rails haga su magia modificaremos el archivo <strong>config/routes.rb</strong>
+y colocaremos la siguiente linea:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+root 'Principal#index'
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Ahora colocaremos las gemas necesarias para que el framework Material trabaje
+dentro de nuestro proyecto, dentro del archivo <strong>Gemfile</strong> colocaremos lo siguiente:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+gem 'materialize-sass'<br>
+gem 'autoprefixer-rails'
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Y para instalarla corremos el siguiente comando en nuestra terminal:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+bundle install
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Ahora en orden para que Materialize funcione modificaremos el archivo que por
+defecto nos crea rails <strong>app/assets/stylesheets/application.css</strong> lo cambiaremos
+por <strong>app/assets/stylesheets/application.scss</strong> y colocaremos lo siguiente:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+@import "materialize/components/color";<br>
+$primary-color: color("blue", "lighten-2") !default;<br>
+@import "materialize";
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Ahora dentro del archivo <strong>app/assets/javascripts/application.js</strong> colocaremos lo siguiente
+bajo <strong>//=require jquery_ujs</strong></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+//= require materialize-sprockets
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Y listo ya puedes empezar a utilizar Materialize dentro de tu proyecto xD</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uso_en_las_vistas_de_un_proyecto_rails">Uso en las vistas de un proyecto Rails</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ahora que podemos utilizar MaterialDesign dentro de nuestro proyecto nos ubicaremos
+dentro de el siguiente archivo <strong>app/views/principal/index.html.erb</strong>, luego copiaremos
+el siguiente codigo donde observamos como se utilizan las clases predeterminadas
+que posee el framework.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;nav class="light-blue lighten-1" role="navigation"&gt;
+    &lt;div class="nav-wrapper container"&gt;&lt;a id="logo-container" href="#" class="brand-logo"&gt;Logo&lt;/a&gt;
+      &lt;ul class="right hide-on-med-and-down"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Navbar Link&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;ul id="nav-mobile" class="side-nav"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Navbar Link&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;a href="#" data-activates="nav-mobile" class="button-collapse"&gt;&lt;i class="material-icons"&gt;menu&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+  &lt;div class="section no-pad-bot" id="index-banner"&gt;
+    &lt;div class="container"&gt;
+      &lt;br&gt;&lt;br&gt;
+      &lt;h1 class="header center orange-text"&gt;Starter Template&lt;/h1&gt;
+      &lt;div class="row center"&gt;
+        &lt;h5 class="header col s12 light"&gt;A modern responsive front-end framework based on Material Design&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class="row center"&gt;
+        &lt;a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange"&gt;Get Started&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;br&gt;&lt;br&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+  &lt;div class="container"&gt;
+    &lt;div class="section"&gt;
+
+      &lt;!--   Icon Section   --&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col s12 m4"&gt;
+          &lt;div class="icon-block"&gt;
+            &lt;h2 class="center light-blue-text"&gt;&lt;i class="material-icons"&gt;flash_on&lt;/i&gt;&lt;/h2&gt;
+            &lt;h5 class="center"&gt;Speeds up development&lt;/h5&gt;
+
+            &lt;p class="light"&gt;We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="col s12 m4"&gt;
+          &lt;div class="icon-block"&gt;
+            &lt;h2 class="center light-blue-text"&gt;&lt;i class="material-icons"&gt;group&lt;/i&gt;&lt;/h2&gt;
+            &lt;h5 class="center"&gt;User Experience Focused&lt;/h5&gt;
+
+            &lt;p class="light"&gt;By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="col s12 m4"&gt;
+          &lt;div class="icon-block"&gt;
+            &lt;h2 class="center light-blue-text"&gt;&lt;i class="material-icons"&gt;settings&lt;/i&gt;&lt;/h2&gt;
+            &lt;h5 class="center"&gt;Easy to work with&lt;/h5&gt;
+
+            &lt;p class="light"&gt;We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;div class="section"&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;footer class="page-footer orange"&gt;
+    &lt;div class="container"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col l6 s12"&gt;
+          &lt;h5 class="white-text"&gt;Company Bio&lt;/h5&gt;
+          &lt;p class="grey-text text-lighten-4"&gt;We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.&lt;/p&gt;
+
+
+        &lt;/div&gt;
+        &lt;div class="col l3 s12"&gt;
+          &lt;h5 class="white-text"&gt;Settings&lt;/h5&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;%= link_to "Link 1", root_path , class: 'white-text' %&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="white-text" href="#!"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="white-text" href="#!"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="white-text" href="#!"&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class="col l3 s12"&gt;
+          &lt;h5 class="white-text"&gt;Connect&lt;/h5&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a class="white-text" href="#!"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="white-text" href="#!"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="white-text" href="#!"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="white-text" href="#!"&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="footer-copyright"&gt;
+      &lt;div class="container"&gt;
+      Made by &lt;a class="orange-text text-lighten-3" href="http://materializecss.com"&gt;Materialize&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Podemos observar como se utilizan las clases predeterminadas del framework
+tanto en <strong>HTML</strong> como en <strong>ERB</strong></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+&lt;li&gt;&lt;%= link_to "Link 1", root_path , class: 'white-text' %&gt;&lt;/li&gt;<br>
+  &lt;li&gt;&lt;a class="white-text" href="#!"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Ahora corremos el servidor</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+rails s
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Podemos observar nuestra pagina <a href="view-source:localhost:3000">Aqui</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_recomendaciones_para_dise_ar">Recomendaciones para diseñar</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Actualmente este framework tiene menor popularidad que <strong>Bootstrap</strong> pero va aumentando
+con el tiempo, para saber mas acerca de los componentes y los diseños creados con <strong>Material Design</strong>
+puedes verlos <a href="view-source:http://materializecss.com/">Aqui</a>.</p>
+</div>
+<div class="paragraph">
+<p>Todo el codigo que se realizo en este post lo puedes encontrar <a href="view-source:https://github.com/enmanuelm19/rails_material">Aqui</a></p>
+</div>
+<div class="sect2">
+<h3 id="_acerca_del_autor">Acerca del autor</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="http://imgur.com/HgnGus9.jpg" alt="100" width="100"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Desarrollador Web, Amante de Ruby on Rails y el OpenSource<br>
+<span class="icon"><i class="fa fa-twitter"></i></span> <a href="view-source:https://twitter.com/Enmanuel19">@Enmanuel19</a><br>
+<span class="icon"><i class="fa fa-google-plus"></i></span> <a href="view-source:https://plus.google.com/117900964128210459102">Enmanuel+</a><br>
+<span class="icon"><i class="fa fa-github-alt"></i></span> <a href="view-source:https://github.com/enmanuelm19/">Enmanuelm19</a><br>
+<span class="icon"><i class="fa fa-linkedin"></i></span> <a href="view-source:ve.linkedin.com/in/enmanuelmedina">Enmanuel Medina</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+          <div class="sect1">
+            <div id="download">
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- download -->
+              <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-7093011170315621"
+              data-ad-slot="2660934362"
+              data-ad-format="auto"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+          </div>
+        </div>
+        </section>
+
+    
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'devopskillcomve'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    
+    </article>
+
+</main>
+    <footer class="animated fadeIn" id="footer">
+        <section class="colophon">
+          <section class="copyright">Copyright &copy; <span itemprop="copyrightHolder">DevopSkill - Desarrolladores hábiles! </span>. <span rel="license">All Rights Reserved</span>.</section>
+          <section class="poweredby">Published with <a class="icon-ghost" href="http://hubpress.io">HubPress</a></section>
+        </section>
+        <section class="bottom">
+          <section class="attribution">
+            <a href="http://github.com/Reedyn/Saga">Built with <i class="fa fa-heart"></i> and Free and Open-Source Software</a>.
+          </section>
+        </section>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+    <script src="//devopskill.com.ve/themes/Saga/assets/js/scripts.js?v=1.0.0"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59969315-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
