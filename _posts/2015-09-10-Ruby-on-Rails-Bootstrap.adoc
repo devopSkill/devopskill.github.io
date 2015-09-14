@@ -14,7 +14,9 @@ Antes de entrar de lleno con el contenido del post les daremos una pequeña rese
 
 == ¿Que es bootstrap?
 
-Bootstrap es un framework frontend, es decir que trabaja en el navegador y sirve para diseña la interfaz de las paginas web, Bootstrap fue inicialmente creado por twitter que permite crear interfaces web con CSS y JavaScript, una de las particularidades de Bootstrap es su capacidad para adaptarse al tamaño de la pantalla donde se muestre(Responsive Design). Leer mas link:view-source:getbootstrap.com[Bootstrap]
+Bootstrap es un framework frontend, es decir que trabaja en el navegador y sirve para diseña la interfaz de las paginas web, Bootstrap fue inicialmente creado por twitter que permite crear interfaces web con CSS y JavaScript, una de las particularidades de Bootstrap es su capacidad para adaptarse al tamaño de la pantalla donde se muestre(Responsive Design). Leer mas http://getbootstrap.com[Bootstrap]
+
+
 
 == ¿Que es Rails?
 
