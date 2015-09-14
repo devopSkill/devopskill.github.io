@@ -3,7 +3,7 @@
 :hp-image: http://i.imgur.com/AfEh0rW.png
 
 Anteriormente en este magnifico blog de desarrolladores colocamos
-link:view-source:http://devopskill.com.ve/2015/09/10/Ruby-on-Rails-Bootstrap.html[*como integrar
+http://devopskill.com.ve/2015/09/10/Ruby-on-Rails-Bootstrap.html[*como integrar
 un gran framework frontend como Bootstrap y el framework backend Rails*], En esta
 ocasion aprenderemos como integrar un framework frontend basado en la filosofia
  de diseño creada por Google *Material Design* con el framework backend *Rails*.
@@ -191,9 +191,9 @@ Podemos observar nuestra pagina link:view-source:localhost:3000[Aqui]
 
 Actualmente este framework tiene menor popularidad que *Bootstrap* pero va aumentando
 con el tiempo, para saber mas acerca de los componentes y los diseños creados con *Material Design*
-puedes verlos link:view-source:http://materializecss.com/[Aqui].
+puedes verlos http://materializecss.com/[Aqui].
 
-Todo el codigo que se realizo en este post lo puedes encontrar link:view-source:https://github.com/enmanuelm19/rails_material[Aqui]
+Todo el codigo que se realizo en este post lo puedes encontrar https://github.com/enmanuelm19/rails_material[Aqui]
 
 === Acerca del autor
 
@@ -204,10 +204,10 @@ Todo el codigo que se realizo en este post lo puedes encontrar link:view-source:
 | image:http://imgur.com/HgnGus9.jpg[100,100] |
 
 Desarrollador Web, Amante de Ruby on Rails y el OpenSource +
-icon:twitter[] link:view-source:https://twitter.com/Enmanuel19[@Enmanuel19] +
-icon:google-plus[] link:view-source:https://plus.google.com/117900964128210459102[Enmanuel+] +
-icon:github-alt[] link:view-source:https://github.com/enmanuelm19/[Enmanuelm19] +
-icon:linkedin[] link:view-source:ve.linkedin.com/in/enmanuelmedina[Enmanuel Medina]
+icon:twitter[] https://twitter.com/Enmanuel19[@Enmanuel19] +
+icon:google-plus[] https://plus.google.com/117900964128210459102[Enmanuel+] +
+icon:github-alt[] https://github.com/enmanuelm19/[Enmanuelm19] +
+icon:linkedin[] http://ve.linkedin.com/in/enmanuelmedina[Enmanuel Medina]
 
 
 |===
