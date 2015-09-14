@@ -226,7 +226,7 @@ Desarrollador Web, Amante de Ruby on Rails y el OpenSource +
 icon:twitter[] https://twitter.com/Enmanuel19[@Enmanuel19] +
 icon:google-plus[] https://plus.google.com/117900964128210459102[Enmanuel+] +
 icon:github-alt[] https://github.com/enmanuelm19/[Enmanuelm19] + 
-icon:linkedin[] ve.linkedin.com/in/enmanuelmedina[Enmanuel Medina]
+icon:linkedin[] http://ve.linkedin.com/in/enmanuelmedina[Enmanuel Medina]
 
 
 |===
